@@ -1,13 +1,11 @@
 import styles from './VoteStats.module.css';
+import {Votes} from '../../types/vote.ts';
 
-interface VoteStatsProps{
-    votes:{
-        good:number;
-        neutral:number;
-        bad:number;
-    };
-    totalVotes: number;
-    positiveRate: number;
+
+interface VoteStatsProps {
+  votes: Votes;
+  totalVotes: number;
+  positiveRate: number;
 }
 
 export default function VoteStats({ votes, totalVotes, positiveRate }: VoteStatsProps){
